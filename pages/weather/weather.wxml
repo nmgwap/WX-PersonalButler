@@ -1,0 +1,110 @@
+<!--pages/weather/weather.wxml-->
+<view class="bgc-w">
+  <!--  定位地址  -->
+  <import src="../../model/model.wxml" />
+  <template is="areaData" data="{{...item}}" />
+  <view class="wt-box">
+    <view class="fs28 fcff wt-d" bindtap="translate">{{my}}</view>
+    <image src="../../images/wz.png" class="wz-img" />
+  </view>
+  <!-- 页面显示天气部分  -->
+  <view class="wt-text">
+    <view class="fcff">
+      {{liveweather.tmp}}℃
+    </view>
+  </view>
+  <view class="mainbox">
+    <image src="../../images/svg/{{liveweather.cond_code}}.svg" class="mainimg" />
+  </view>
+  <view class="wt-text">
+    <view class="fcff">
+      {{liveweather.cond_txt}}
+    </view>
+  </view>
+  <!-- 详细信息  -->
+  <view class="detbox">
+    <!-- 五条数据 -->
+    <view class="detlist">
+      <view class="fcff fs28 det-tt">湿度</view>
+      <view>
+        <image src="../../images/sd.png" class="detimg" />
+      </view>
+      <view class="fcff fs28">{{liveweather.hum}}</view>
+    </view>
+    <!-- 五条数据 -->
+    <view class="detlist">
+      <view class="fcff fs28 det-tt">降水量</view>
+      <view>
+        <image src="../../images/jstj.png" class="detimg" />
+      </view>
+      <view class="fcff fs28">{{liveweather.pcpn}}</view>
+    </view>
+    <!-- 五条数据 -->
+    <view class="detlist">
+      <view class="fcff fs28 det-tt">风向</view>
+      <view>
+        <image src="../../images/fx.png" class="detimg" />
+      </view>
+      <view class="fcff fs28">{{liveweather.wind_dir}}</view>
+    </view>
+    <!-- 五条数据 -->
+    <view class="detlist">
+      <view class="fcff fs28 det-tt">风力</view>
+      <view>
+        <image src="../../images/fl.png" class="detimg" />
+      </view>
+      <view class="fcff fs28">{{liveweather.wind_sc}}</view>
+    </view>
+    <!-- 五条数据 -->
+    <view class="detlist">
+      <view class="fcff fs28 det-tt">风速</view>
+      <view>
+        <image src="../../images/fs.png" class="detimg" />
+      </view>
+      <view class="fcff fs28">{{liveweather.wind_spd}}</view>
+    </view>
+    <view class="clear"></view>
+  </view>
+  <!-- 未来三天天气  -->
+  <view class="threebox">
+    <!-- 三天 -->
+    <view class="threelist fcff fs30">
+      <view class="leftbox">今天 {{three[0].date}}</view>
+      <view class="centerbox">
+        <view class="dp-ib threeimgbox">
+          <image src="../../images/svg/{{three[0].cond_code_d}}.svg" class="detimg threeimg" />
+          <view class="dp-ib threetext">
+            {{three[0].cond_txt_d}}
+          </view>
+        </view>
+      </view>
+      <view class="rightbox">{{three[0].tmp_min}}℃ ~ {{three[0].tmp_max}}℃</view>
+    </view>
+    <!-- 三天 -->
+    <view class="threelist fcff fs30">
+      <view class="leftbox">明天 {{three[1].date}}</view>
+      <view class="centerbox">
+        <view class="dp-ib threeimgbox">
+          <image src="../../images/svg/{{three[1].cond_code_d}}.svg" class="detimg threeimg" />
+          <view class="dp-ib threetext">
+            {{three[1].cond_txt_d}}
+          </view>
+        </view>
+      </view>
+      <view class="rightbox">{{three[1].tmp_min}}℃ ~ {{three[1].tmp_max}}℃</view>
+    </view>
+    <!-- 三天 -->
+    <view class="threelist fcff fs30">
+      <view class="leftbox">后天 {{three[2].date}}</view>
+      <view class="centerbox">
+        <view class="dp-ib threeimgbox">
+          <image src="../../images/svg/{{three[2].cond_code_d}}.svg" class="detimg threeimg" />
+          <view class="dp-ib threetext">
+            {{three[2].cond_txt_d}}
+          </view>
+        </view>
+      </view>
+      <view class="rightbox">{{three[2].tmp_min}}℃ ~ {{three[2].tmp_max}}℃</view>
+    </view>
+  </view>
+</view>

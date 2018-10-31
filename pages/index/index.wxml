@@ -1,0 +1,56 @@
+<!--pages/index/index.wxml-->
+<view class="index-body">
+  <!--  页面滚动部分  -->
+  <swiper class="swipr-box" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+    <block wx:for="{{imgUrls}}" wx:key="{{list}}">
+    <navigator url="{{item.openpath}}" hover-class="none" open-type="navigate">
+      <swiper-item>
+        <image src="{{item.img}}" class="slide-image banner-img" />
+      </swiper-item>
+      </navigator>
+    </block>
+  </swiper>
+  <!--  页面服务部分  -->
+  
+  <view class="server-box">
+    <!--服务  -->
+    <view class="">
+      <view class="server-text fs26">服 务</view>
+    </view>
+    <!--列表  -->
+    <view class="list-server">
+      <!-- 循环 -->
+      <view class="listbox" wx:for="{{server}}" wx:key="img">
+        <navigator url="{{item.openpath}}" hover-class="none" open-type="navigate">
+          <view>
+            <image src="{{item.img}}" class="listimg" />
+          </view>
+          <view class="fs28">
+            {{item.text}}
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <view class="clear"></view>
+  </view>
+  <!--  页面待开发部分  -->
+  <view class="server-box inm">
+    <!--服务  -->
+    <view class="">
+      <view class="server-text fs26">开发中,敬请期待...</view>
+    </view>
+    <!--列表  -->
+    <view class="list-server">
+      <!-- 循环 -->
+      <view class="listbox" wx:for="{{unserver}}" wx:key="img">
+        <view>
+          <image src="{{item.img}}" class="listimg" />
+        </view>
+        <view class="fs28">
+          {{item.text}}
+        </view>
+      </view>
+      <view class="clear"></view>
+    </view>
+  </view>
+</view>

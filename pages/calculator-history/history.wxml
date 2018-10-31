@@ -1,0 +1,5 @@
+<view class=" log-list">
+  <block wx:for="{{results}}" wx:for-item="r">
+    <text class="log-item">{{index + 1}}. {{r.length>30?"数据过长，以省略！":r}}</text>
+  </block>
+</view>

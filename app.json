@@ -1,0 +1,59 @@
+{
+  "pages": [  
+    "pages/index/index",
+    "pages/about/about",
+    "pages/weather/weather",
+    "pages/IDCard/IDCard",
+    "pages/bankQuery/bankQuery",
+    "pages/bankExchangeRate/bankExchangeRate",
+    "pages/MobileHome/MobileHome",
+    "pages/figure/figure",
+    "pages/IP/IP",
+    "pages/cand/index",    
+    "pages/game/game",
+    "pages/2048/2048",
+    "pages/pinyin/index",
+    "pages/calculator-index/index",
+    "pages/calculator-history/history",
+    "pages/gojuuonn/gojuuonn"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "贴身管家",
+    "navigationBarBackgroundColor": "#fbf9fe",
+    "backgroundColor": "#fbf9fe"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#009be0",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/shouye1.png",
+        "selectedIconPath": "images/shouye.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/weather/weather",
+        "iconPath": "images/tianqi1.png",
+        "selectedIconPath": "images/tianqi.png",
+        "text": "天气"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "iconPath": "images/guanyu1.png",
+        "selectedIconPath": "images/guanyu.png",
+        "text": "关于"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

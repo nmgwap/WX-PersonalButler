@@ -1,0 +1,51 @@
+.container{
+  padding: 0;
+  background-color: #fff;
+}
+.hamm-box{
+  padding: 10px;
+  width:100%;
+}
+.hamm-result{
+  padding: 20rpx;
+  text-align: right;
+  font-size:3rem;
+  padding-top: 50rpx;
+  padding-bottom: 50rpx;
+  color: #0e90d2;
+  word-break:break-all;
+}
+.hamm-box-ctrl{
+  padding: 10rpx;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10rpx;
+ 
+}
+.hamm-ctrl{
+  display: flex;
+}
+.hamm-ctrl-item{
+  margin: 10rpx;
+  display: block;
+  width: 25%;
+  text-align: center;
+  height: 150rpx;
+  line-height: 150rpx;
+  font-size: 1.5rem;
+  background-color: #009be0;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10rpx;
+}
+.hamm-ctrl-item:active{
+  background-color: #fff;
+  color: #000;
+}
+
+.hamm-button{
+  padding: 20rpx;
+}
+.btnc{
+  background-color: #009be0 !important;
+  color:#fff !important;
+}

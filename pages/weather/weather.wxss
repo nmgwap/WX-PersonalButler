@@ -1,0 +1,120 @@
+/* pages/weather/weather.wxss */
+@import '../../model/model.wxss';
+
+page {  
+  display: block;  
+  min-height: 100%;  
+  background-color: #009be0;  
+} 
+.bgc-w {
+  background-color: #009be0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 30rpx 2-rpx;
+}
+
+.wt-box {
+  position: relative;
+  padding-left:20rpx;
+  box-sizing: border-box;
+}
+
+.wt-d {
+  box-sizing: border-box;
+  padding-left: 40rpx;
+}
+
+.wz-img {
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  top: 2rpx;
+  left: 20rpx;
+}
+
+.mainbox{
+  width:100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.mainimg{
+  width:250rpx;
+  height:250rpx;
+  margin-top:30rpx;
+}
+
+.wt-text{
+  text-align: center;
+  margin:20rpx 0rpx;
+  padding:20rpx 0rpx;
+}
+
+.detbox{
+  width:100%;
+  box-sizing: border-box;
+  margin-top:60rpx;
+}
+
+.det-tt{
+  margin-bottom:10rpx;
+}
+.detlist{
+  width:20%;
+  box-sizing: border-box;
+  text-align: center;
+  float: left;
+}
+
+.detimg{
+  width:40rpx;
+  height:40rpx;
+  padding:0rpx 0rpx;
+}
+
+.threebox{
+  width:100%;
+  margin-top:40rpx;
+  box-sizing: border-box;
+  padding:0rpx 40rpx;
+  padding-bottom:50rpx;
+}
+
+.threelist{
+  box-sizing: border-box;
+  padding:20rpx 0rpx;
+}
+
+.leftbox{
+  width:40%;
+  text-align: left;
+  display: inline-block;
+}
+
+.centerbox{
+  width:30%;
+  text-align: center;
+  display: inline-block;
+}
+
+.rightbox{
+  width:30%;
+  text-align: right;
+  display: inline-block;
+}
+
+.threeimgbox{
+  position: relative;
+}
+.threeimg{
+  width:40rpx;
+  height:40rpx;
+  position: absolute;
+  top:0rpx;
+  z-index: -1;
+}
+.threetext{
+  box-sizing: border-box;
+  padding-left:50rpx;
+}

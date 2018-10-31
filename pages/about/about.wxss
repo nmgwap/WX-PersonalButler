@@ -1,0 +1,60 @@
+/* pages/about/about.wxss */
+
+.abimgbox {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 100rpx;
+  text-align: center;
+}
+
+.logoimg {
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.logntext {
+  margin-top: 10rpx;
+}
+
+.mybbox {
+  margin-top: 40rpx;
+  padding: 40rpx;
+}
+
+.mybox {
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background: linear-gradient(to left, #e98d43, #f2dd14);
+  border-radius: 20rpx;
+}
+
+.linbox {
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background: linear-gradient(to left, #6c66fe, #d28ff8);
+  border-radius: 20rpx;
+}
+
+.imgbox {
+  width: 30%;
+  display: inline-block;
+}
+
+.textbox {
+  width: 70%;
+  display: inline-block;
+  text-align: left;
+}
+
+.myimg {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.ybbox {
+  margin-top: 20rpx;
+  padding: 20rpx 40rpx;
+}

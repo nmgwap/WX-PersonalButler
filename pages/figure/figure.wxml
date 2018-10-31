@@ -1,0 +1,50 @@
+<!--pages/figure/figure.wxml-->
+<view>
+  <view class="pages-box">
+    <!--  提示文字  -->
+    <view class="fs32 fc99">
+      请输入您的身高体重
+    </view>
+    <!--  搜索框  -->
+    <view class="inp-box">
+      <input class="inp" bindinput="height" placeholder="身高" placeholder-style="font-size:30rpx" />
+      <view class="inpimg">
+        <image src="../../images/height.png" class="pagesimg" />
+      </view>
+    </view>
+    <view class="inp-box">
+      <input class="inp" bindinput="weight" placeholder="体重" placeholder-style="font-size:30rpx" />
+      <view class="inpimg">
+        <image src="../../images/weight.png" class="pagesimg" />
+      </view>
+    </view>
+    <!--  提交按钮  -->
+    <view class="btn-box">
+      <button class="btn fs32" bindtap="getdata">
+        计 算
+      </button>
+    </view>
+
+  </view>
+  <!--  详细信息  -->
+  <view class="det-box {{show?'':'dp-n'}}">
+    <view class="pg-t fs36 fc99">
+      计算结果
+    </view>
+    <view class="pglist fc99 figure">
+      <image src="{{res.img}}" class="figureimg"/>
+    </view>
+    <view class="pglist fc99">
+      <view class="pg-l fs32">测试结果：</view>
+      <view class="pg-r fs32">{{res.msg}}</view>
+    </view>
+    <view class="pglist fc99">
+      <view class="pg-l fs32">理想体重：</view>
+      <view class="pg-r fs32">{{res.ideal}}</view>
+    </view>
+    <view class="pglist fc99">
+      <view class="pg-l fs32">BMI：</view>
+      <view class="pg-r fs32">{{res.bmi}}</view>
+    </view>
+  </view>
+</view>

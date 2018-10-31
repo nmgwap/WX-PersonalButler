@@ -1,0 +1,32 @@
+<!--pages/about/about.wxml-->
+<view class="abimgbox">
+  <view>
+    <image src="../../images/logo.png" class="logoimg" />
+  </view>
+  <view class="fs30 logntext">
+    贴身管家(小程序版)
+  </view>
+  <view class="mybbox">
+    <view class="mybox">
+      <view class="imgbox">
+        <image src="../../images/my.jpg" class="myimg"/>
+      </view>
+      <view class="textbox fs30 fcff">
+        <view>nmgwap</view>
+        <view>此应用开发者</view>
+      </view>
+    </view>
+  </view>
+  <view class="ybbox">
+    <view class="linbox">
+      <view class="imgbox">
+        <image src="../../images/y.jpg" class="myimg"/>
+      </view>
+      <view class="textbox fs30 fcff">
+        <view>linhaibo</view>
+        <view>此应用界面绘制者</view>
+      </view>
+    </view>
+  </view>
+
+</view>

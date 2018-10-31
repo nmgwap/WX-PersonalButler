@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class="body">
+  <view class="date">
+    <picker class="pickerdate" mode="date" start="{{starttimes}}" end="2999-12-12" bindchange="datePickerBindchange">
+      {{xin}}
+    </picker>
+    <text class=" fc99 candt">{{date}}</text>
+  </view>
+  <view class="good">
+    <view class="title">
+      <text>宜</text>
+    </view>
+    <view class="content">
+      <view class="content-max" wx:for="{{goodlists}}">
+        <view class="content-name">{{item.name}}</view>
+        <view class="content-txt">{{item.good}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="split">
+    <view class="title">
+      <text>忌</text>
+    </view>
+    <view class="content">
+      <view class="content-max" wx:for="{{splitlists}}">
+        <view class="content-name">{{item.name}}</view>
+        <view class="content-txt">{{item.bad}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="shupai">
+    <text class="strongtxt">座位朝向：</text>
+    <text>面向</text>
+    <text class="direction">{{direction}}</text>
+    <text>写程序，BUG 最少。</text>
+  </view>
+  <view class="shupai">
+    <text class="strongtxt">今日宜饮：</text>
+    <text>{{drinks}}</text>
+  </view>
+  <view class="shupai">
+    <text class="strongtxt">女神亲近指数：</text>
+    <text class="start">{{stars}}</text>
+  </view>
+</view>

@@ -1,0 +1,49 @@
+<!--pages/bankQuery/bankQuery.wxml-->
+<view>
+  <view class="pages-box">
+    <!--  提示文字  -->
+    <view class="fs32 fc99">
+      请输入您要查询的银行卡号
+    </view>
+    <!--  搜索框  -->
+    <view class="inp-box">
+      <input class="inp" bindinput="bankCard" placeholder="银行卡号" placeholder-style="font-size:30rpx"/>
+      <view class="inpimg">
+        <image src="../../images/search.png" class="pagesimg" />
+      </view>
+    </view>
+    <!--  提交按钮  -->
+    <view class="btn-box">
+      <button class="btn fs32" bindtap="getdata">
+        查 询
+      </button>
+    </view>
+
+  </view>
+  <!--  详细信息  -->
+  <view class="det-box {{show?'':'dp-n'}}">
+    <view class="pg-t fs36 fc99">
+      详细信息
+    </view>
+    <view class="pglist fc99">
+      <view class="pg-l fs32">银行卡号：</view>
+      <view class="pg-r fs32">{{getdata.bankCard}}</view>
+    </view>
+    <view class="pglist fc99">
+      <view class="pg-l fs32">银行名称：</view>
+      <view class="pg-r fs32">{{getdata.bankName}}</view>
+    </view>
+    <view class="pglist fc99">
+      <view class="pg-l fs32">卡片类型：</view>
+      <view class="pg-r fs32">{{getdata.cardType}}</view>
+    </view>
+    <view class="pglist fc99">
+      <view class="pg-l fs32">银行网址：</view>
+      <view class="pg-r fs32">{{getdata.site}}</view>
+    </view>
+    <view class="pglist fc99">
+      <view class="pg-l fs32">客服电话：</view>
+      <view class="pg-r fs32">{{getdata.bankMobile}}</view>
+    </view>
+  </view>
+</view>

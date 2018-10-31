@@ -1,0 +1,125 @@
+/**index.wxss**/
+
+.body {
+  flex-direction: column;
+  display: flex;
+}
+
+.hear-text {
+  margin: 5px auto;
+}
+
+.date {
+  font-weight: bold;
+  justify-content: center;
+  font-size: 22px;
+  flex-direction: row;
+  display: inline-block;
+  text-align: left;
+  height:22px;
+  line-height: 22px;
+  padding:20rpx;
+
+}
+.candt{
+  display: inline-block;
+  position: absolute;
+  top:20rpx;
+  left:80rpx;
+  font-size: 36rpx;
+  height:22px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.pickerdate {
+  background-color: #fff;
+  padding-right: 10px
+}
+
+.good {
+  flex-direction: row;
+  position: relative;
+  display: flex;
+}
+
+.split {
+  flex-direction: row;
+  position: relative;
+  display: flex;
+  margin-top:40rpx;
+}
+
+.good .title {
+  color: #0A6C05;
+}
+
+.split .title {
+  color: #FF0D12;
+}
+
+.title {
+  width: 100px;
+  font-weight: bold;
+  font-size: 30pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shupai {
+  padding: 20rpx;
+  font-size:30rpx;
+  margin-top:10rpx;
+  color:#999;
+}
+
+.strongtxt {
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-max {
+  padding: 5px 10px;
+}
+
+.content-name {
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 30rpx;
+  color:#999;
+}
+
+.content-txt {
+  white-space: nowrap;
+  font-size: 24rpx;
+  color:#999;
+}
+
+.direction {
+  color: blue;
+  font-weight: bold;
+}
+
+.start {
+  color: #f87;
+}
+
+.footer {
+  margin-top: 10px;
+  text-align: center;
+  border-top: 2px solid #000;
+  padding-top: 10px;
+}
+
+.foot {
+  text-align: center;
+}
+
+.foot text {
+  border-bottom: 1px solid #000;
+}

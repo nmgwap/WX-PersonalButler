@@ -1,0 +1,8 @@
+/* pages/figure/figure.wxss */
+.figure{
+  text-align: center;
+}
+.figureimg{
+  width:100rpx;
+  height:100rpx;
+}

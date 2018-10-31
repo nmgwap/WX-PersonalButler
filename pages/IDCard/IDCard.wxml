@@ -1,0 +1,57 @@
+<!--pages/IDCard/IDCard.wxml-->
+<view>
+  <view class="pages-box">
+    <!--  提示文字  -->
+    <view class="fs32 fc99">
+      请输入您要查询的身份证号码
+    </view>
+    <!--  搜索框  -->
+    <view class="inp-box">
+      <input class="inp" bindinput="IDCard" placeholder="身份证号码" placeholder-style="font-size:30rpx"/>
+      <view class="inpimg">
+        <image src="../../images/search.png" class="pagesimg" />
+      </view>
+    </view>
+    <!--  提交按钮  -->
+    <view class="btn-box">
+      <button class="btn fs32" bindtap="getdata">
+        查 询
+      </button>
+    </view>
+
+  </view>
+  <!--  详细信息  -->
+  <view class="det-box {{show?'':'dp-n'}}">
+    <view class="pg-t fs36 fc99">
+      详细信息
+    </view>
+    <view class="pglist fc99">
+      <view class="pg-l fs32">号码：</view>
+      <view class="pg-r fs32">{{getdata.idcard}}</view>
+    </view>
+    <view class="pglist fc99">
+      <view class="pg-l fs32">生日：</view>
+      <view class="pg-r fs32">{{getdata.birthday}}</view>
+    </view>
+    <view class="pglist fc99">
+      <view class="pg-l fs32">性别：</view>
+      <view class="pg-r fs32">{{getdata.sex}}</view>
+    </view>
+    <view class="pglist fc99">
+      <view class="pg-l fs32">属性：</view>
+      <view class="pg-r fs32">{{getdata.zodiac}}</view>
+    </view>
+    <view class="pglist fc99">
+      <view class="pg-l fs32">时辰：</view>
+      <view class="pg-r fs32">{{getdata.cnEra}}</view>
+    </view>
+    <view class="pglist fc99">
+      <view class="pg-l fs32">星座：</view>
+      <view class="pg-r fs32">{{getdata.constellation}}</view>
+    </view>
+    <view class="pglist fc99">
+      <view class="pg-l fs32">地址：</view>
+      <view class="pg-r fs32">{{getdata.area}}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+/**index.wxss**/
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pinyin-text {
+  padding-bottom: 36rpx;
+  height: 100rpx;
+}
+
+
+
+.tip {
+  padding-top: 10rpx;
+  color: #D5D5D5;
+}
+.operation-container {
+  margin-top: 350rpx;
+}
